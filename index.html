@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio(CV numérique)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="1.jpg" style="width: 60%;">
+    <h1><em>Mon nom et prénom :</em></h1>
+      <h1 class="nom">TSIRINIAINA
+   <h3 class="nom"><span>Tafitasoa Faratiana</span></h3></h1>
+    <p>Étudiant à l'École de Management et d'Innovation Technologie (EMIT) Université de Fianarantsoa</p>
+  </header>
+    <ul><a href="#col"><div class="box"><span class="btn projets-btn">Voir mes projets =></span></div></a></ul>
+    <ul>
+      <a href="#col2"><div class="box"><span class="btn">Mes contact</span>
+        
+      </div></a>
+    </ul>
+<section class="objectif personnelles hidden">
+           <div class="box">
+            <h2 class="btn">    <span class="icon-obj">🎯</span>Objectif personnelles</h2></div>
+      <p>Étudiant en première année de Licence Informatique à l’École de Management et d’Innovation Technologique (EMIT), passionné par le développement web et les nouvelles technologies, je souhaite développer mes compétences en programmation et en conception d’applications web. Mon objectif est de mettre en pratique mes connaissances en HTML et CSS à travers des projets concrets afin d’acquérir de l’expérience dans le domaine du développement informatique.</p>
+      <script>
+  const hiddenElements = document.querySelectorAll('.hidden');
+
+  window.addEventListener('scroll', () => {
+    hiddenElements.forEach(el => {
+      const position = el.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.2;
+
+      if(position < screenPosition){
+        el.classList.add('show');
+      }
+    });
+  });
+</script><script>
+  const logoObj = document.querySelector('.icon-obj');
+
+  window.addEventListener('scroll', () => {
+    const position = logoObj.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      logoObj.style.opacity = '1';
+      logoObj.style.transform = 'translateY(0)';
+    }
+  });
+</script>
+      </section>
+      <section class="informations personnelles hidden-personnelle">
+    
+      <div class="box">
+        <h2 class="btn"><span class="icon-info">👤</span> Informationns personnelles</h2></div>
+    <p>
+     <ul>
+      <li>Nom et prénom : TSIRINIAINA Tafitasoa faratiana</li>
+      <li>Date de naissance : 16 Avril 2007</li>
+      <li><span class="icon-lieu"><img src="lieu.jpg" style="width: 2%;" /></span> Lieu : Ankofafalahy Fianarantsoa</li>
+      <li><span class="icon-Email">✉️</span> Email : tafita098@gmail.com</li>
+      <li><span class="icon-contact">📞</span> Telephone : 0344873327/0334049489</li>
+    </p><script>
+  const infoPerso = document.querySelector('.hidden-personnelle');
+
+  window.addEventListener('scroll', () => {
+    const position = infoPerso.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      infoPerso.classList.add('show-personnelle');
+    }
+  });
+</script>
+  </section>
+    <section class="etudes hidden-etudes">
+      <div class="etudes-section">
+    <h2 class="btn">
+  <span class="icon-etudes">🎓</span>
+  Études et diplômes
+</h2>
+    <ul>
+      <p><strong><em>2024-2025 :</em></strong> Terminal aux lycée Catholique Laura Vicuña(FMA) ;
+      <em>Diplôme Baccalaurèat serie C enseignement général et Catholique</em></p><p><img src="fMA.jpg" style="width: 20%;" /></p>
+      <p><strong><em>2020-2021 :</em></strong> Troisième au Lycée privée Les Semeurs ; <em>Diplôme BEPC </em></p>
+      <strong><em>2016-2017 :</em></strong> Septième au College Nid d'Angel <em>Diplôme CEPE</em>
+    </ul><script>
+  const etudesSection = document.querySelector('.hidden-etudes');
+
+  window.addEventListener('scroll', () => {
+    const position = etudesSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      etudesSection.classList.add('show-etudes');
+    }
+  });
+</script>
+  </section>
+  <section class="formation hidden-formation">
+    <h2 class="btn"><span class="icon-form">🏫</span> Formation Universitaire</h2>
+    <div class="projet">
+       <ul>
+         <li><strong>École :</strong> École de Management et d'Innovation Technologie université de Fianarantsoa<p><img src="émit.jpg" style="width: 25%;" /><<img src="uf.jpg" style="width: 20%;" /></li>
+         <li><strong>Mention : </strong>Informatique</li>
+         <li><strong>Parcours :</strong> Développement d'Application d'Intranet et d' Internet</li>
+         <li><strong>Niveau : </strong> Licence (L1)</li>
+         <li><strong>Matricule :</strong> 045I26</li>
+         <li><strong>Années Universitaire : </strong>2025-2026</li>
+       </ul>
+    </div><script>
+  const formationSection = document.querySelector('.hidden-formation');
+
+  window.addEventListener('scroll', () => {
+    const position = formationSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      formationSection.classList.add('show-formation');
+    }
+  });
+</script>
+  </section>
+  <section class="projets hidden-projets">
+    <h2 id="col" class="btn"><span class="icon-projet">💻</span> Projets informatiques réalisés</h2>
+   <ul><li><strong>création d'un site web Portfolio personnel</strong></li>
+<p>Développement d’un site web statique présentant mon CV numérique en utilisant les langages HTML5 et CSS3</p>
+<li><strong>Réalisation d’une barre de progression animée en CSS</strong></li>
+<p>Conception d’une animation dynamique permettant d’afficher le niveau de compétence en programmation à l’aide des animations CSS (@keyframes).</p>
+<li><strong>Conception d’un formulaire de contact en HTML/CSS</strong></li>
+<p>Création d’un formulaire permettant la saisie des informations utilisateur (nom, email, message) avec mise en forme en CSS.</p>
+<li><strong>Mise en page responsive d’une page Web</strong></li>
+<p>Adaptation de l’affichage du site web pour différents écrans (ordinateur et téléphone) grâce aux techniques de Responsive Design.</p>
+</ul><script>
+  const projetsSection = document.querySelector('.hidden-projets');
+
+  window.addEventListener('scroll', () => {
+    const position = projetsSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      projetsSection.classList.add('show-projets');
+    }
+  });
+</script>
+  </section>
+  <section class="langues hidden-langues">
+    <h2 class="btn"><span class="icon-lang">🌍</span> Langues et Divers</h2>
+   <ol>
+    <li><strong>Malagasy :</strong> Langue maternellr</li><p><img src="mada.jpg" style="width: 20%;" /></p>
+    <li><strong>Français :</strong> Bonne compréhension et Expression (oral et écrit)</li><p><img src="frn.jpg" style="width: 20%;" /></p>
+    <li><strong>Anglais : </strong>Niveau moyen (compréhension et Expression)</li><p><img src="ang.png" style="width: 20%;" /></p>
+    <li><strong>Sport : </strong>Football</li><p><img src="ballon.jpg" style="width: 20%;" /></p>
+    <li><strong>Loisirs : </strong> Musque</li><p><img src="mus.jpg" style="width: 20%;" /></p>
+    </ol>
+    <script>
+  const languesSection = document.querySelector('.hidden-langues');
+
+  window.addEventListener('scroll', () => {
+    const position = languesSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      languesSection.classList.add('show-langues');
+    }
+  });
+</script>
+  </section>
+     <section class="competences hidden-competences">
+    <h2 class="btn"><span class="icon-comp">💪</span> Compétence informatique</h2>
+    <div class="competence">
+  <img src="html.png" class="logo-html">
+  <span>HTML</span></div><div class="competence"><img src="CSS.png" class="logo-CSS">
+  <span>CSS</span>
+</div>
+    <b><span class="icon-burea">📑</span> BUREAUTIQUE :</b> Word , Excel , Powerpoint<br>
+    internet et base de l'informatique
+    <script>
+  const competencesSection = document.querySelector('.hidden-competences');
+
+  window.addEventListener('scroll', () => {
+    const position = competencesSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      competencesSection.classList.add('show-competences');
+    }
+  });
+</script>
+  </section>
+     <section class="qualites hidden-qualites">
+    <h2 class="btn"><span class="icon-qual">🌟</span> Qualités professionnelles</h2>
+    <ul>
+      <li>Dynamique , Polyvalent,intègre , Honnête , Consciencieux , Ponctuel</li>
+      <li>Esprit d'équipe , Positif et Rèaliste</li>
+      <li>Bonne communication ,sens de l'organisation et de l'ecoute</li>
+    </ul><script>
+  const qualitesSection = document.querySelector('.hidden-qualites');
+
+  window.addEventListener('scroll', () => {
+    const position = qualitesSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      qualitesSection.classList.add('show-qualites');
+    }
+  });
+</script>
+  </section>
+    <section class="contact hidden">
+  <h2 id="col2" class="btn"><span class="icon-contact">📞</span> Contact</h2>
+<h1>Restons en contact</h1>
+<p>Je suis toujours intéressé par de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !</p>
+  <a href="tel:+261344873327" class="contact-btn call">
+    📞 direct call
+  </a>
+
+  <a href="mailto:tafita098@gmail.com" class="contact-btn mail">
+    ✉ Email
+  </a>
+
+  <a href="https://wa.me/261344873327" target="_blank" class="contact-btn whatsapp">
+    💬 WhatsApp
+  </a>
+
+  <a href="https://github.com/tafita098-sudo" target="_blank" class="contact-btn github">
+    🔗 GitHub
+  </a>
+<script>
+  const section = document.querySelector('.contact');
+
+  window.addEventListener('scroll', () => {
+    const position = section.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.3;
+
+    if(position < screenPosition){
+      section.classList.add('show');
+    }
+  });
+</script>
+</section>
+  </section>
+  <section class="contact-form hidden-form">
+ <h2 class="btn"><span class="icon-contact-me">✉️</span> Contactez-moi</h2>
+
+  <form name="contact" method="POST" data-netlify="true">
+
+    <input type="hidden" name="form-name" value="contact">
+
+    <label>Nom complet *</label>
+    <input type="text" name="nom" placeholder="Votre nom" required>
+
+    <label>Adresse email *</label>
+    <input type="email" name="email" placeholder="votre@email.com" required>
+
+    <label>Sujet *</label>
+    <input type="text" name="sujet" placeholder="Sujet de votre message" required>
+
+    <label>Message *</label>
+    <textarea name="message" placeholder="Votre message..." required></textarea>
+
+    <button type="submit">Envoyer le message</button>
+
+  </form><script>
+  const formSection = document.querySelector('.hidden-form');
+
+  window.addEventListener('scroll', () => {
+    const position = formSection.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight / 1.2;
+
+    if(position < screenPosition){
+      formSection.classList.add('show-form');
+    }
+  });
+</script>
+</section>
+      </div>
+    </div>
+  <footer>
+    <p>© 2026 TSIRINIAINA Tafitasoa Faratiana</p>
+    <ul>
+      Nérée TSIRINIAINA Tafitasoa Faratiana. Tous droits réservés
+    </ul>
+  </footer>
+
+</body>
+</html>
